@@ -16,7 +16,12 @@
             <h1 class="logo">Withan <h1 class="logo-text">Phlsak</h1>
             </h1>
         </a>
-        <div class="link-nav">
+        <button class="menu-toggle" onclick="document.getElementById('navMenu').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="link-nav" id="navMenu">
             <a href="page1.html#abt" class="link-nav1">About & skills</a>
             <a href="page1.html#pehl" class="link-nav1">projects & experience(Highlight)</a>
             <a href="page1.html#pe" class="link-nav1">projects & experience</a>
@@ -25,41 +30,72 @@
     </nav>
 
     <!-- content -->
-     <div class="cd1">
+    <div class="cd1">
         <div class="tp1">World Green Mech 2026
-(R4M basic)(ประเทศ)</div>
-        <div class="dct1">การเเข่งขันหุ่นยนต์ทำตามภารกิจ(คล้ายกับนานาชาติ) รอบนี้คัดจาก27ทีมเหลือ 10 ทีมเพื่อไปต่อในระดับนานาชาติ โดยในรอบนี้ก็จะเป็นการอัดvideo เพื่อส่งผ่านเเบบฟอร์มดังจึงสามารถอัดกี่รอบก็ได้เอารอบที่ทำได้ดีที่สุดเเต่เวลาการอัดก็ต้องอัดเวลาเท่ากับตอนเเข่งนานาชาติ(ตอนที่เริ่มทำภารกิจ) จัดโดย สมาคม Thailand GreenMech ร่วมกับ Gigo Thailand เเละ กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม เเละ กระทรวงศึกษาธิการ</div>
-        <div style="margin-top: 40px; text-align: left; font-size: 20px; color: #dad8d8; font-family: 'Prompt', sans-serif;">หน้าที่: <span style="color: rgb(255, 255, 255);">ผมได้ทำหน้าที่ในการเขียนเเละเเก้ไขโค้ดให้กับหุ่นยนต์ เเละ บังคับหุ่นยนต์เดินตามเส้น</span></div>
-        <div style="margin-top: 15px; text-align: left; font-size: 20px; color: #dad8d8; font-family: 'Prompt', sans-serif;">สิ่งที่ได้รับ: <span style="color: rgb(255, 255, 255);">ผมได้รู้จักกับ micro-bit เป็นครั้งเเรก  เเล้วได้รู้ว่าmicro-bit คืออะไรใช้ทำอะไรได้บ้างเกี่ยวกับรายการที่ผมจะเเข่ง ได้รู้จักกับชิ้นส่วนต่างเเละการออกเเบบหุ่นยนต์ เทคนิคต่างๆที่จะทำให้เวลาได้ดี เเละ การบริหารเวลาเนื่องมีเวลาจำกัดเเข่งขันเท่ากับระดับนานาชาติ เเล้วผมก็ได้รู้จักกับคุณครูที่จะพาผมฝึกซ้อม</span></div>
-        <div style="margin-top: 15px; text-align: left; font-size: 20px; color: #dad8d8; font-family: 'Prompt', sans-serif;">อุปสรรคที่เจอ: <span style="color: rgb(255, 255, 255);">อุปสรรคคือกว่าจะได้คลิปที่ดีที่สุดในวันสุดท้ายก่อนที่ระบบจะปิดรับการสมัครทีมเราก็อัดคลิปจนถึง22:00</span></div>
-        <div style="margin-top: 15px; text-align: left; font-size: 20px; color: #dad8d8; font-family: 'Prompt', sans-serif;">Tech Stack & tools ที่ใช้: <span style="color: rgb(255, 255, 255);">Micro-bit, JavaScript, Codeblock</span></div>
-        <div style="margin-top: 15px; text-align: left; font-size: 20px; color: #dad8d8; font-family: 'Prompt', sans-serif;">รางวัลที่ได้: <span style="color: rgb(255, 255, 255);">ไปต่อในระดับนานาชาติ</span></div>
-        <div>
-            <img src="">
+            (R4M basic)(ประเทศ)</div>
+        <div class="dct1">การเเข่งขันหุ่นยนต์ทำตามภารกิจ(คล้ายกับนานาชาติ) รอบนี้คัดจาก27ทีมเหลือ 10
+            ทีมเพื่อไปต่อในระดับนานาชาติ โดยในรอบนี้ก็จะเป็นการอัดvideo
+            เพื่อส่งผ่านเเบบฟอร์มดังจึงสามารถอัดกี่รอบก็ได้เอารอบที่ทำได้ดีที่สุดเเต่เวลาการอัดก็ต้องอัดเวลาเท่ากับตอนเเข่งนานาชาติ(ตอนที่เริ่มทำภารกิจ)
+            จัดโดย สมาคม Thailand GreenMech ร่วมกับ Gigo Thailand เเละ กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม
+            เเละ กระทรวงศึกษาธิการ</div>
+        <div
+            style="margin-top: 40px; text-align: left; font-size: 20px; color: #dad8d8; font-family: 'Prompt', sans-serif;">
+            หน้าที่: <span style="color: rgb(255, 255, 255);">ผมได้ทำหน้าที่ในการเขียนเเละเเก้ไขโค้ดให้กับหุ่นยนต์ เเละ
+                บังคับหุ่นยนต์เดินตามเส้น</span></div>
+        <div
+            style="margin-top: 15px; text-align: left; font-size: 20px; color: #dad8d8; font-family: 'Prompt', sans-serif;">
+            สิ่งที่ได้รับ: <span style="color: rgb(255, 255, 255);">ผมได้รู้จักกับ micro-bit เป็นครั้งเเรก
+                เเล้วได้รู้ว่าmicro-bit คืออะไรใช้ทำอะไรได้บ้างเกี่ยวกับรายการที่ผมจะเเข่ง
+                ได้รู้จักกับชิ้นส่วนต่างเเละการออกเเบบหุ่นยนต์ เทคนิคต่างๆที่จะทำให้เวลาได้ดี เเละ
+                การบริหารเวลาเนื่องมีเวลาจำกัดเเข่งขันเท่ากับระดับนานาชาติ
+                เเล้วผมก็ได้รู้จักกับคุณครูที่จะพาผมฝึกซ้อม</span></div>
+        <div
+            style="margin-top: 15px; text-align: left; font-size: 20px; color: #dad8d8; font-family: 'Prompt', sans-serif;">
+            อุปสรรคที่เจอ: <span
+                style="color: rgb(255, 255, 255);">อุปสรรคคือกว่าจะได้คลิปที่ดีที่สุดในวันสุดท้ายก่อนที่ระบบจะปิดรับการสมัครทีมเราก็อัดคลิปจนถึง22:00</span>
         </div>
-     </div>
+        <div
+            style="margin-top: 15px; text-align: left; font-size: 20px; color: #dad8d8; font-family: 'Prompt', sans-serif;">
+            Tech Stack & tools ที่ใช้: <span style="color: rgb(255, 255, 255);">Micro-bit, JavaScript, Codeblock</span>
+        </div>
+        <div
+            style="margin-top: 15px; text-align: left; font-size: 20px; color: #dad8d8; font-family: 'Prompt', sans-serif;">
+            รางวัลที่ได้: <span style="color: rgb(255, 255, 255);">ไปต่อในระดับนานาชาติ</span></div>
 
-     <!-- contact -->
+    </div>
+
+
+    <!-- img -->
+    <div class="img-incard">
+        <img src="https://scontent.fbkk29-9.fna.fbcdn.net/v/t1.15752-9/837918465_2494862074254035_3959188414905045937_n.jpg?stp=dst-webp_s480x480&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHBhNuzFlOoNw-hAJzJXn8yFB6qaN0YA-EUHqpo3RgD4aFSK27vZNOdWShCdWPSFJl8YQ6SPUCUgJzFEDXmwweF&_nc_ohc=5JmUCGEcr7wQ7kNvwFjLFKO&_nc_oc=AdrSXDsSRc_7xEqGG3_-tFCP0zTTQH7BWzR_RRce5cEHqzZmPa730KW9plY-A8YwHOo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fbkk29-9.fna&_nc_ss=7a22e&oh=03_Q7cD6gG0YBep9cl8LfmSnJSE2Ht62GuVZaAitm3OYosZyeZerA&oe=6AF70CF3"
+            class="img-incard-in">
+        <img src="https://scontent.fbkk29-6.fna.fbcdn.net/v/t1.15752-9/836806459_1959552565449283_7530654337891033628_n.jpg?stp=dst-webp_s480x480&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEP2tIaY2pB4fF6ZmicNVOIAUOq2ebVi0oBQ6rZ5tWLSnJwsasWzvbbYh3l5PH1lCd6HNk02RW_h-KlyAHTCUSw&_nc_ohc=jkulirX-f04Q7kNvwF3PgIN&_nc_oc=AdpL3EAjwe5eNa2JLlC6t2Y3dPSNm4VUhWJx4TdJqsdOVR402bRaJPW2f9VC01bAsdE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fbkk29-6.fna&_nc_ss=7a22e&oh=03_Q7cD6gFYZqtVYAliizOmS09vLPMvBvakqeA3bik_OGY4eH0Hrw&oe=6AF6E5C3"
+            class="img-incard-in">
+        <img src="https://scontent.fbkk29-6.fna.fbcdn.net/v/t1.15752-9/842465175_2568630406942533_5973417045825830801_n.png?stp=dst-png_p394x394&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeG5KH8a0VJQwR99kvTX66vTYuk7txzD1ZVi6Tu3HMPVlZTe-ZmvMssMZyagBhG1gCFu1VhQtsrY2R138ZrDUVLK&_nc_ohc=NGLBAOr9cLcQ7kNvwGJbfo0&_nc_oc=AdoCyePgkedpqZHcfPE2-gwYdFEyM6QGVZ-wpdMfjhkAeKglrVMzGk1XcNWibvDnpoQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fbkk29-6.fna&_nc_ss=7a22e&oh=03_Q7cD6gG6wxTRx0cHFQePCwh3dmPlD4HhbeZmZnuW0j8RX3oB-Q&oe=6AF709BF"
+            class="img-incard-in">
+    </div>
+
+    <!-- contact -->
     <div class="ct" id="ft">
-        <div style="margin-left: 200px; font-family: 'Prompt', sans-serif; font-size: 20px; padding-bottom: 100px;">
-            <div style="font-size: 25px; margin-bottom: 15px;">
+        <div class="contact">
+            <div style="font-size: 1.5625rem; margin-bottom: 0.9375rem;">
                 contact
             </div>
-            <div style="margin-bottom: 10px;">
+            <div style="margin-bottom: 0.625rem;">
                 email: withanphlsakdi906@gmail.com
             </div>
-            <div style="margin-bottom: 0px;">
+            <div style="margin-bottom: 0rem;">
                 Phone number: 0963650168
             </div>
             <div>
-                <a href="https://github.com/withanphlsak"><img
+                <a href="https://www.facebook.com/withan.phlsak"><img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbfmESMMlbFRQVtVwJYbAnqBjIe42bhEbVnl9HPuQzctfGCL6f3rumsjLS&s=10"
                         alt="Facebook" width="40" height="40" class="link-facebook"></a>
             </div>
         </div>
-        <div style=" font-family: 'Prompt', sans-serif; font-size: 18px; padding-bottom: 20px; padding-top: 20px; background-color: rgb(16, 16, 16);">
-            <div
-                style=" margin-left: 50px; background-color: rgb(16, 16, 16); ">
+        <div
+            style=" font-family: 'Prompt', sans-serif; font-size: 1.125rem; padding-bottom: 1.25rem; padding-top: 1.25rem; background-color: rgb(16, 16, 16);">
+            <div style=" margin-left: 3.125rem; background-color: rgb(16, 16, 16); ">
                 © 2026 วิธาน พลศักดิ์. All rights reserved.
             </div>
         </div>

@@ -16,16 +16,21 @@
             <h1 class="logo">Withan <h1 class="logo-text">Phlsak</h1>
             </h1>
         </a>
-        <div class="link-nav">
-            <a href="#abt" class="link-nav1">About & skills</a>
-            <a href="#pehl" class="link-nav1">projects & experience(Highlight)</a>
-            <a href="#pe" class="link-nav1">projects & experience</a>
-            <a href="#ft" class="link-nav1">Contact</a>
+        <button class="menu-toggle" onclick="document.getElementById('navMenu').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="link-nav" id="navMenu">
+            <a href="page1.html#abt" class="link-nav1">About & skills</a>
+            <a href="page1.html#pehl" class="link-nav1">projects & experience(Highlight)</a>
+            <a href="page1.html#pe" class="link-nav1">projects & experience</a>
+            <a href="page1.html#ft" class="link-nav1">Contact</a>
         </div>
     </nav>
 
     <!-- presentation -->
-    <div style="display: flex; margin-top: 50px;">
+    <div class="container-present">
         <div>
             <h1 class="skill-iconic"> web | micro-bit </h1>
             <div class="welcome">สวัสดีครับยินดีต้อนรับสู่เว็บไซต์ของ</div>
@@ -40,23 +45,24 @@
                 <a href="https://github.com/withanphlsak"><img
                         src="https://as2.ftcdn.net/jpg/02/50/30/59/1000_F_250305943_sDC6la1N1fDl3bLgfLxOkQwItIodsdMb.jpg"
                         alt="GitHub" width="40" height="40" class="link-github"></a>
-                <a href="https://github.com/withanphlsak"><img
+                <a href="https://www.facebook.com/withan.phlsak"><img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbfmESMMlbFRQVtVwJYbAnqBjIe42bhEbVnl9HPuQzctfGCL6f3rumsjLS&s=10"
                         alt="Facebook" width="40" height="40" class="link-facebook"></a>
-                <div class="gmail">withanphlsakdi906@gmail.com</div>
+                
             </div>
+            <div class="gmail">withanphlsakdi906@gmail.com</div>
             <div><a href="#pehl" class="link-project">project & experience</a></div>
             <div class="project-experience">
                 <span>
-                    <span class="project-experience-number" style="margin-left: 20px;">4+</span>
+                    <span class="project-experience-number" style="margin-left: 1.25rem;">4+</span>
                     <div class="project-experience-text">project</div>
                 </span>
                 <span>
-                    <span class="project-experience-number" style="margin-left: 40px;">3+</span>
+                    <span class="project-experience-number" style="margin-left: 2.5rem;">3+</span>
                     <div class="project-experience-text">competition</div>
                 </span>
                 <span>
-                    <span class="project-experience-number" style="margin-left: 60px;">3+</span>
+                    <span class="project-experience-number" style="margin-left: 3.75rem;">3+</span>
                     <div class="project-experience-text">other experience</div>
                 </span>
             </div>
@@ -68,31 +74,35 @@
     </div>
 
     <!-- about -->
-    <div style="display: flex;" id="abt">
+    <div class="about" id="abt">
         <div>
             <div>
                 <div
-                    style="margin-left: 30%; margin-top: 200px; font-size: 30px; color: #55f455; font-family: 'Prompt', sans-serif;">
+                    style="margin-left: 36%; margin-top: 12.5rem; font-size: 1.875rem; color: #55f455; font-family: 'Prompt', sans-serif;">
                     About Me
                 </div>
                 <div
-                    style="margin-left: 100px; margin-top: 10px; font-size: 20px; color: #ffffff; font-family: 'Prompt', sans-serif;">
+                    style="margin-left: 6.25rem; margin-top: 0.625rem; font-size: 1.25rem; color: #ffffff; font-family: 'Prompt', sans-serif;">
                     ผมเป็นนักเรียนคนหนึ่งที่ชอบในการเขียนโค้ด เเละ เคยสร้างเว็บไซต์หอพักของที่บ้านผมเอง<div>
                         ซึ่งมีระบบเช็คสถานะของห้องพัก
                         เเข่งขันหุ่นยนต์r4m(robot for mission) รายการ green mech(ระดับนานาชาติ)</div>
-                    <div style="margin-top: 20px;">Tech stack ที่ถนัด: <span class="stck"
-                            style="color: #E34C26; border: 2px solid #E34C26;">HTML</span> <span class="stck"
-                            style="color: #3078C6;  border: 2px solid #3078C6;">CSS</span> <span class="stck"
-                            style="color: #F0DB4F; border: 2px solid #F0DB4F;">JavaScript</span></div>
-                    <div style="margin-top: 20px;">Tech stack ที่มีความรู้พื้นฐาน: <span class="stck"
-                            style="color: #FFD43B; border: 2px solid #306998;">Python</span>
-                        <span class="stck" style="color: #FFD43B; border: 2px solid #306998;">postgreSQL</span>
-                        <span class="stck" style="color: #FFD43B; border: 2px solid #306998;">C language</span>
+                    <div class="tech-container">
+                        <span>Tech stack ที่ถนัด:</span>
+                        <span class="stck" style="color: #E34C26; border: 0.125rem solid #E34C26;">HTML</span>
+                        <span class="stck" style="color: #3078C6; border: 0.125rem solid #306998;">CSS</span>
+                        <span class="stck" style="color: #F0DB4F; border: 0.125rem solid #F0DB4F;">JavaScript</span>
                     </div>
-                    <div style="margin-top: 10px;">
-                        ที่อยู่: <span class="">จังหวัดนครปฐม</span>
-                        <div style="margin-top: 10px;">อีเมล: withanphlsakdi906@gmail.com</div>
-                        <div style="margin-top: 10px;">โทรศัพท์: 096-365-0168</div>
+
+                    <div class="tech-container">
+                        <span>Tech stack ที่มีความรู้พื้นฐาน:</span>
+                        <span class="stck" style="color: #FFD43B; border: 0.125rem solid #306998; padding: 0.3125rem 0.3125rem;">Python</span>
+                        <span class="stck" style="color: #FFD43B; border: 0.125rem solid #306998; padding: 0.3125rem 0.3125rem;">postgreSQL</span>
+                        <span class="stck" style="color: #FFD43B; border: 0.125rem solid #306998; padding: 0.3125rem 0.3125rem;">C</span>
+                    </div>
+                    <div style="margin-top: 0.625rem;">
+                        ที่อยู่: <span class="">เลขที่ 18/3 หมู่ที่ 14 ถนน มิตรภาพ ตำบลในเมือง อ.เมือง 40000</span>
+                        <div style="margin-top: 0.625rem;">อีเมล: withanphlsakdi906@gmail.com</div>
+                        <div style="margin-top: 0.625rem;">โทรศัพท์: 096-365-0168</div>
                     </div>
                 </div>
             </div>
@@ -100,11 +110,11 @@
         <div class="unique">
             <h3 style="text-align: center;">จุดเด่น</h3>
             <div
-                style="margin-top: 10px; font-size: 20px; color: #ffffff; font-family: 'Prompt', sans-serif; margin-left: 10px;">
-                <ul style="margin-top: 20px">
-                    <li style="margin-bottom: 10px;">เคยลงมือทำโปรเจคจริง</li>
-                    <li style="margin-bottom: 10px;">ทำงานเป็นทีมได้ดี</li>
-                    <li style="margin-bottom: 10px;">สามารถนำความรู้ที่มีอยู่ไปประยุกต์ในการสร้างโปรเจคต่างๆได้</li>
+                style="margin-top: 0.625rem; font-size: 1.25rem; color: #ffffff; font-family: 'Prompt', sans-serif; margin-left: 0.625rem;">
+                <ul style="margin-top: 1.25rem">
+                    <li style="margin-bottom: 0.625rem;">เคยลงมือทำโปรเจคจริง</li>
+                    <li style="margin-bottom: 0.625rem;">ทำงานเป็นทีมได้ดี</li>
+                    <li style="margin-bottom: 0.625rem;">สามารถนำความรู้ที่มีอยู่ไปประยุกต์ในการสร้างโปรเจคต่างๆได้</li>
                 </ul>
             </div>
         </div>
@@ -113,8 +123,7 @@
 
     <!-- project & experience Highlight -->
     <div id="pehl">
-        <h3
-            style="margin-top: 200px; font-family: 'Prompt', sans-serif; color: #55f455; margin-left: 36%; font-size: 30px;">
+        <h3 class="topic">
             Project & Experience (Highlight)</h3>
         <div class="pro-ex-grid">
             <div class="grid-item">
@@ -122,24 +131,25 @@
                     <a href="pagecard1.html" class="img-card-container">
                         <img src="https://scontent.fbkk22-2.fna.fbcdn.net/v/t1.15752-9/825310497_1405755784426286_5575916947410065707_n.jpg?stp=dst-jpg_tt6&cstp=mx1365x2048&ctp=s1365x2048&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFU1AbxwajcFmdtWqajB4XTxypYc4XQjq3HKlhzhdCOrUmn4caZv9xvJr0VpvOlIMWdSsjLF0326Ey4ciKQIxq0&_nc_ohc=lpMAAdvbUQEQ7kNvwFOBB1R&_nc_oc=AdpeymM-J02z-FmeOxXK7Lly7ushgK5yeteYOLmY9LHQmE9ejxs-D1gWZGQ3ImhdEJeRJiB1E1k6gkGmn4hQruNh&_nc_zt=23&_nc_ht=scontent.fbkk22-2.fna&_nc_ss=732a8&oh=03_Q7cD6gH7B9K7K0lxJrqEdDGeQvaGuEh2lneO_wAuLa70vfw2xw&oe=6AE82928"
                             class="img-card"
-                            style="width: 100%; height: 170px; object-fit: cover; object-position: center 50%;">
+                            style="width: 100%; height: 10.625rem; object-fit: cover; object-position: center 50%;">
                     </a>
-                    <div style="padding: 10px;">
-                        <h4 style="color: #ffffff; margin-left: 20px;">World Green Mech 2026<div>(นานาชาติ)(R4M basic)
+                    <div style="padding: 0.625rem;">
+                        <h4 style="color: #ffffff; margin-left: 1.25rem;">World Green Mech 2026<div>(นานาชาติ)(R4M
+                                basic)
                             </div>
                         </h4>
-                        <div style="color: #dad8d8; margin-top: 20px; margin-left: 10px; font-size: 18px;">
+                        <div style="color: #dad8d8; margin-top: 1.25rem; margin-left: 0.625rem; font-size: 1.125rem;">
                             การเเข่งขันหุ่นยนต์ทำตามภารกิจโดยใช้หลักการ STEM
                             ในการออกเเบบซึ่งผมได้ทำหน้าที่ในการเขียนเเละเเก้ไขโค้ดให้กับหุ่นยนต์ เเละ คอยดูภาพรวมต่างๆ
                         </div>
-                        <div style="color: #dad8d8; margin-top: 10px; margin-left: 10px; font-size: 18px;">
+                        <div style="color: #dad8d8; margin-top: 0.625rem; margin-left: 0.625rem; font-size: 1.125rem;">
                             รางวัลที่ได้รับ: <span style="color: #55f455;">รางวัลชมเชย</span></div>
-                        <div style="margin-left: 10px; margin-top: 20px; gap: 10px; display: flex;">
+                        <div style="margin-left: 0.625rem; margin-top: 1.25rem; gap: 0.625rem; display: flex;">
                             <span class="tech-card1">JavaScript</span>
                             <span class="tech-card1">Block-Based</span>
                             <span class="tech-card1">Micro-bit</span>
                         </div>
-                        <div style="margin-left: 10px; margin-top: 20px;">
+                        <div style="margin-left: 0.625rem; margin-top: 1.25rem;">
                             <a href="pagecard1.html" class="bt1">
                                 รายละเอียด
                             </a>
@@ -152,23 +162,24 @@
                     <a href="pagecard2.html" class="img-card-container">
                         <img src="https://scontent.fbkk22-6.fna.fbcdn.net/v/t1.15752-9/828051233_1608704417362009_245771145478143236_n.jpg?stp=dst-jpg_tt6&cstp=mx1108x1477&ctp=s1108x1477&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGWgRDq4lhgAIItwDqiSk1D1_kYN9WfoCTX-Rg31Z-gJJFAXdbw4fPV21X4duXVkb83ab-EBWGVEAWWZtlmWf41&_nc_ohc=s_cREyIVb6AQ7kNvwF3zSXh&_nc_oc=Adqf5hzHlhBCQWNZpcqyy8DLqgSj4vzpOy7FiyDtiQesUIw3uo4n9tmp4GrfLjxX3ACvKWu7LLbXjs0Wdpxth8X8&_nc_zt=23&_nc_ht=scontent.fbkk22-6.fna&_nc_ss=732a8&oh=03_Q7cD6gEJq1QW6sliai8XWsypkv21jLTudBg-ebKEl4hnxIkw_w&oe=6AE83925"
                             class="img-card"
-                            style="width: 100%; height: 170px; object-fit: cover; object-position: center 50%;">
+                            style="width: 100%; height: 10.625rem; object-fit: cover; object-position: center 50%;">
                     </a>
-                    <div style="padding: 10px; margin-top: -1px;">
-                        <h4 style="color: #ffffff; margin-left: 20px;">การเเข่งขันทักษะคอมพิวเตอร์<div>(ภูมิภาค)</div>
+                    <div style="padding: 0.625rem; margin-top: -0.0625rem;">
+                        <h4 style="color: #ffffff; margin-left: 1.25rem;">การเเข่งขันทักษะคอมพิวเตอร์<div>(ภูมิภาค)
+                            </div>
                         </h4>
-                        <div style="color: #dad8d8; margin-top: 20px; margin-left: 10px; font-size: 18px;">
+                        <div style="color: #dad8d8; margin-top: 1.25rem; margin-left: 0.625rem; font-size: 1.125rem;">
                             การเเข่งขันสร้างเว็บไซต์เเบบเดี่ยวที่มีหลายหน้าทั้งหน้าเเรกเเละเนื้อหาโดยใช้โปรเเกรม
                             Dreamweaver,Photoshop ในระยะเวลา 2 ชั่วโมง ทั้งหมด 22 ทีม</div>
-                        <div style="color: #dad8d8; margin-top: 10px; margin-left: 10px; font-size: 18px;">
+                        <div style="color: #dad8d8; margin-top: 0.625rem; margin-left: 0.625rem; font-size: 1.125rem;">
                             รางวัลที่ได้รับ: <span style="color: #55f455;">เหรียญเงิน อันดับ10</span></div>
-                        <div style="margin-left: 10px; margin-top: 20px; gap: 10px; display: flex;">
-                            <span class="tech-card1">Html</span>
-                            <span class="tech-card1">Css</span>
-                            <span class="tech-card1">Dreamweaver</span>
-                            <span class="tech-card1">Photoshop</span>
+                        <div class="tech-use">
+                            <span class="tech-card2">Html</span>
+                            <span class="tech-card2">Css</span>
+                            <span class="tech-card2">Dreamweaver</span>
+                            <span class="tech-card2">Photoshop</span>
                         </div>
-                        <div style="margin-left: 10px; margin-top: 20px;">
+                        <div style="margin-left: 0.625rem; margin-top: 1.25rem;">
                             <a href="pagecard2.html" class="bt1">
                                 รายละเอียด
                             </a>
@@ -180,26 +191,26 @@
                 <a href="pagecard3.html" class="img-card-container">
                     <img src="https://scontent.fbkk22-1.fna.fbcdn.net/v/t1.15752-9/835676535_1409625550639822_156174575192109227_n.png?stp=dst-png_s843x403&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFU-VPEPNlQ9waHpVh1XkvM19NuZZL6RknX025lkvpGScFTnXRuAlBvmI6C8Eb4GCfmYIAj74Fqa2KBsLbG6V_h&_nc_ohc=fhDtXr4s9LEQ7kNvwHhg2Ds&_nc_oc=Adp1tWUQK9T4csmH2EnMAPZyRwA5xSo09x8XpQKkBwe1g-c1Urxv3Sxca8PSM-Om5Yv4o404ZO6DA4OUfwYGcwq5&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fbkk22-1.fna&_nc_ss=7a22e&oh=03_Q7cD6gHIEYJ-Fmglic2WiRboIU0i-GTS9fp3VQY2fUHZ9vLPMQ&oe=6AE83DC5"
                         class="img-card"
-                        style="width: 100%; height: 170px; object-fit: cover; object-position: center 5%;">
+                        style="width: 100%; height: 10.625rem; object-fit: cover; object-position: center 5%;">
                 </a>
-                <div style="padding: 10px;">
-                    <h4 style="color: #ffffff; margin-left: 20px;">Website praijarurnhouse<div>(Project)</div>
+                <div style="padding: 0.625rem;">
+                    <h4 style="color: #ffffff; margin-left: 1.25rem;">Website praijarurnhouse<div>(Project)</div>
                     </h4>
-                    <div style="color: #dad8d8; margin-top: 20px; margin-left: 10px; font-size: 18px;">
+                    <div style="color: #dad8d8; margin-top: 1.25rem; margin-left: 0.625rem; font-size: 1.125rem;">
                         เว็บไซต์นี้คือเว็บไซต์หอพักของที่บ้านผมเองซึ่งผมสร้างมาเพื่อเเนะนำรายละเอียดสิ่งต่างๆของหอพักเเละหน้าตาของเเต่ละห้องเป็นอย่างไรเเละยังสามารถเช็คสถานะห้องว่างของเเต่ละห้องเเล้วสามารถกดปุ่มทักสอบถามได้เลย
-                        (อยู่เเถวกังสดาล)</div>
+                        เเละ รองรับทุกขนาดหน้าจอ</div>
 
-                    <div style="margin-left: 10px; margin-top: 9px; gap: 10px; display: flex;">
-                        <span class="tech-card1">JavaScript</span>
-                        <span class="tech-card1">Html</span>
-                        <span class="tech-card1">Css</span>
-                        <span class="tech-card1">PostgreSQL</span>
+                    <div class="tech-use">
+                        <span class="tech-card2">JavaScript</span>
+                        <span class="tech-card2">Html</span>
+                        <span class="tech-card2">Css</span>
+                        <span class="tech-card2">PostgreSQL</span>
                     </div>
-                    <div style="margin-left: 10px; margin-top: 20px;">
-                        <a href="#" class="bt1">
+                    <div style="margin-left: 0.625rem; margin-top: 1.25rem;">
+                        <a href="https://praijarurnhousewebsite.vercel.app/index.html" class="bt1">
                             ชมเว็บไซต์
                         </a>
-                        <a href="#" class="bt1">
+                        <a href="https://github.com/withanphlsak/praijarurnhouse_website" class="bt1">
                             github
                         </a>
                         <a href="pagecard3.html" class="bt1">
@@ -213,36 +224,35 @@
 
 
     <!-- project & experience -->
-    <div id="pe" style="margin-bottom: 100px;">
-        <h3
-            style="margin-top: 200px; font-family: 'Prompt', sans-serif; color: #55f455; margin-left: 40%; font-size: 30px;">
+    <div id="pe" style="margin-bottom: 6.25rem;">
+        <h3 class="topic2">
             Project & Experience</h3>
         <div class="pro-ex-grid2">
             <div class="grid-item">
                 <a href="pagecard4.html" class="img-card-container">
                     <img src="https://scontent.fkkc2-1.fna.fbcdn.net/v/t1.15752-9/837918465_2494862074254035_3959188414905045937_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1536&ctp=s2048x1536&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHBhNuzFlOoNw-hAJzJXn8yFB6qaN0YA-EUHqpo3RgD4aFSK27vZNOdWShCdWPSFJl8YQ6SPUCUgJzFEDXmwweF&_nc_ohc=gJ2cHZxuQaQQ7kNvwGcC4ul&_nc_oc=AdpiyiLzhnveKkfRoyQufek9hSqK6xQ5SCWBXMT7x4hhlcgljD-aSI0VWMlfPTnuJYl8MdjSJKNbm2U0EZcHi6xu&_nc_zt=23&_nc_ht=scontent.fkkc2-1.fna&_nc_ss=732a8&oh=03_Q7cD6gH6aJc3ka334XQqPNV6M59X8i4Rh3XUutBratCBFf6HKA&oe=6AF2A7F3"
                         class="img-card"
-                        style="width: 100%; height: 170px; object-fit: cover; object-position: center 5%;">
+                        style="width: 100%; height: 10.625rem; object-fit: cover; object-position: center 5%;">
                 </a>
-                <div style="padding: 10px;">
-                    <h4 style="color: #ffffff; margin-left: 20px;">World Green Mech 2026<div>(ประเทศ)(R4M basic)
+                <div style="padding: 0.625rem;">
+                    <h4 style="color: #ffffff; margin-left: 1.25rem;">World Green Mech 2026<div>(ประเทศ)(R4M basic)
                         </div>
                     </h4>
-                    <div style="color: #dad8d8; margin-top: 20px; margin-left: 10px; font-size: 18px;">
+                    <div style="color: #dad8d8; margin-top: 1.25rem; margin-left: 0.625rem; font-size: 1.125rem;">
                         การเเข่งขันหุ่นยนต์ทำตามภารกิจ(คล้ายกับนานาชาติ) รอบนี้คัดจาก27ทีมเหลือ 10
                         ทีมเพื่อไปต่อในระดับนานาชาติ
                         ซึ่งผมได้ทำหน้าที่ในการเขียนเเละเเก้ไขโค้ดให้กับหุ่นยนต์ เเละ บังคับหุ่นยนต์เดินตามเส้น
                     </div>
-                    <div style="color: #dad8d8; margin-top: 10px; margin-left: 10px; font-size: 18px;">
+                    <div style="color: #dad8d8; margin-top: 0.625rem; margin-left: 0.625rem; font-size: 1.125rem;">
                         รางวัลที่ได้รับ: <span style="color: #55f455;">ไปต่อในระดับนานาชาติ</span></div>
-                    <div style="margin-left: 10px; margin-top: 10px; gap: 10px; display: flex;">
+                    <div style="margin-left: 0.625rem; margin-top: 0.625rem; gap: 0.625rem; display: flex;">
                         <span class="tech-card1">JavaScript</span>
                         <span class="tech-card1">Block-Based</span>
                         <span class="tech-card1">Micro-bit</span>
 
 
                     </div>
-                    <div style="margin-left: 10px; margin-top: 7px;">
+                    <div style="margin-left: 0.625rem; margin-top: 0.4375rem;">
                         <a href="pagecard4.html" class="bt1">
                             รายละเอียด
                         </a>
@@ -254,24 +264,25 @@
                     <a href="pagecard5.html" class="img-card-container">
                         <img src="https://scontent.fkkc2-1.fna.fbcdn.net/v/t1.15752-9/843366148_2813328439050864_252108196566613227_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeF98oz8kR396reJ1OfzSLiEC9-yYyx6oOEL37JjLHqg4Wa3M-r_4fLSEJhp3VksZJZzH8XIFtwBi1V1alK4JhpY&_nc_ohc=ng0XTvHKlbgQ7kNvwHtpXKZ&_nc_oc=AdqsZ9VAVzJvFBnfEzpTqLM5ocJ2ROf7M5nL93Ng4l-QBxGVcVJP32klO7xpleBnox1TeQmDPUr5dvLpka3qOInJ&_nc_zt=23&_nc_ht=scontent.fkkc2-1.fna&_nc_ss=732a8&oh=03_Q7cD6gHBdwCJiM3tkoWS-ikeF7h_8cguYR6swTS1-W1SADsyXQ&oe=6AF2D6D4"
                             class="img-card"
-                            style="width: 100%; height: 170px; object-fit: cover; object-position: center 50%;">
+                            style="width: 100%; height: 10.625rem; object-fit: cover; object-position: center 50%;">
                     </a>
-                    <div style="padding: 10px; margin-top: -1px;">
-                        <h4 style="color: #ffffff; margin-left: 20px;">ถังขยะเคลื่อนที่ วันสิ่งเเวดล้อม<div>(Project)
+                    <div style="padding: 0.625rem; margin-top: -0.0625rem; ">
+                        <h4 style="color: #ffffff; margin-left: 1.25rem;">ถังขยะเคลื่อนที่ วันสิ่งเเวดล้อม<div>(Project)
                             </div>
                         </h4>
-                        <div style="color: #dad8d8; margin-top: 20px; margin-left: 10px; font-size: 18px;">
-                            ถังขยะเคลื่อนที่ ได้เคลื่อนที่นำปากกาให้ผอในการเซ็นเปิดงานวันสิ่งเเวดล้อม เเละ
+                        <div style="color: #dad8d8; margin-top: 1.25rem; margin-left: 0.625rem; font-size: 1.125rem;">
+                            ถังขยะเคลื่อนที่ สร้างขึ้นเพื่อเคลื่อนที่นำปากกาให้ผอในการเซ็นเปิดงานวันสิ่งเเวดล้อม เเละ
                             เป็นโปรเจคเเรกที่ทำให้ผมได้ลองใช้ arduino เป็นครั้งเเรกผมได้เรียนรู้การใช้งานบอร์ด
                             กับมอเตอร์ เเละได้เเก้ไขปัญหาที่เจอต่างๆ</div>
-
-                        <div style="margin-left: 10px; margin-top: 20px; gap: 10px; display: flex;">
-                            <span class="tech-card1">Arduino</span>
-                        </div>
-                        <div style="margin-left: 10px; margin-top: 20px;">
-                            <a href="pagecard5.html" class="bt1">
-                                รายละเอียด
-                            </a>
+                        <div style="display: flex;">
+                            <div style="margin-left: 0.625rem; margin-top: 1.6875rem; gap: 0.625rem;">
+                                <span class="tech-card1">Arduino</span>
+                            </div>
+                            <div style="margin-left: 0.625rem; margin-top: 1.25rem;">
+                                <a href="pagecard5.html" class="bt1">
+                                    รายละเอียด
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -281,22 +292,22 @@
                     <a href="pagecard6.html" class="img-card-container">
                         <img src="https://scontent.fbkk22-1.fna.fbcdn.net/v/t1.15752-9/835676535_1409625550639822_156174575192109227_n.png?stp=dst-png_s843x403&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFU-VPEPNlQ9waHpVh1XkvM19NuZZL6RknX025lkvpGScFTnXRuAlBvmI6C8Eb4GCfmYIAj74Fqa2KBsLbG6V_h&_nc_ohc=fhDtXr4s9LEQ7kNvwHhg2Ds&_nc_oc=Adp1tWUQK9T4csmH2EnMAPZyRwA5xSo09x8XpQKkBwe1g-c1Urxv3Sxca8PSM-Om5Yv4o404ZO6DA4OUfwYGcwq5&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fbkk22-1.fna&_nc_ss=7a22e&oh=03_Q7cD6gHIEYJ-Fmglic2WiRboIU0i-GTS9fp3VQY2fUHZ9vLPMQ&oe=6AE83DC5"
                             class="img-card"
-                            style="width: 100%; height: 170px; object-fit: cover; object-position: center 50%;">
+                            style="width: 100%; height: 10.625rem; object-fit: cover; object-position: center 50%;">
                     </a>
-                    <div style="padding: 10px;">
-                        <h4 style="color: #ffffff; margin-left: 20px;">Website praijarurnhouse<div>(Project)</div>
+                    <div style="padding: 0.625rem;">
+                        <h4 style="color: #ffffff; margin-left: 1.25rem;">Website praijarurnhouse<div>(Project)</div>
                         </h4>
-                        <div style="color: #dad8d8; margin-top: 20px; margin-left: 10px; font-size: 18px;">
+                        <div style="color: #dad8d8; margin-top: 1.25rem; margin-left: 0.625rem; font-size: 1.125rem;">
                             เว็บไซต์นี้คือเว็บไซต์หอพักของที่บ้านผมเองซึ่งผมสร้างมาเพื่อเเนะนำรายละเอียดสิ่งต่างๆของหอพักเเละหน้าตาของเเต่ละห้องเป็นอย่างไรเเละยังสามารถเช็คสถานะห้องว่างของเเต่ละห้องเเล้วสามารถกดปุ่มทักสอบถามได้เลย
                             (อยู่เเถวกังสดาล)</div>
 
-                        <div style="margin-left: 10px; margin-top: 9px; gap: 10px; display: flex;">
+                        <div style="margin-left: 0.625rem; margin-top: 0.5625rem; gap: 0.625rem; display: flex;">
                             <span class="tech-card1">JavaScript</span>
                             <span class="tech-card1">Html</span>
                             <span class="tech-card1">Css</span>
                             <span class="tech-card1">PostgreSQL</span>
                         </div>
-                        <div style="margin-left: 10px; margin-top: 20px;">
+                        <div style="margin-left: 0.625rem; margin-top: 1.25rem;">
                             <a href="#" class="bt1">
                                 ชมเว็บไซต์
                             </a>
@@ -315,25 +326,25 @@
                     <a href="pagecard7.html" class="img-card-container">
                         <img src="https://scontent.fkkc2-1.fna.fbcdn.net/v/t1.15752-9/841316410_1446955100681860_7450560809782150702_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1448&ctp=s2048x1448&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFQlOGrqP0xWObuSnC1I4pz8e9OdRp67Ubx7051GnrtRjbInNEuPoxjIS4dRKncYNraUJOFsWE77Gx0oYfzOEoJ&_nc_ohc=tA8ia60NS4EQ7kNvwHM4oLu&_nc_oc=Adr09VuK-dE4eQGGIxv9EJIv2xTYe6MXaJxzTLb1mb1RGl0cUvJMC8TZW4LrSTmU3hvTe8uU821ZkXLIZeatvP8C&_nc_zt=23&_nc_ht=scontent.fkkc2-1.fna&_nc_ss=732a8&oh=03_Q7cD6gFf4EmU8hHXNQVf5vATlQnqSz6aPP1FevzGxXsNq6rYuQ&oe=6AF2C7C6"
                             class="img-card"
-                            style="width: 100%; height: 170px; object-fit: cover; object-position: center 50%;">
+                            style="width: 100%; height: 10.625rem; object-fit: cover; object-position: center 50%;">
                     </a>
-                    <div style="padding: 10px;">
-                        <h4 style="color: #ffffff; margin-left: 20px;">Computing fair 2025<div>(ระดับสถาบันศึกษา)
+                    <div style="padding: 0.625rem;">
+                        <h4 style="color: #ffffff; margin-left: 1.25rem;">Computing fair 2025<div>(ระดับสถาบันศึกษา)
                             </div>
                         </h4>
-                        <div style="color: #dad8d8; margin-top: 20px; margin-left: 10px; font-size: 18px;">
+                        <div style="color: #dad8d8; margin-top: 1.25rem; margin-left: 0.625rem; font-size: 1.125rem;">
                             การเเข่งขันนี้เป็นการเเข่งขันที่ต้องเขียนโค้ดให้เเสดงผลลัพธ์ตามที่โจทย์กำหนดโดยใช้โปรเเกรม
                             codeblock
                             เป็นอีกหนึ่งประสบการณ์ทำให้ผมได้เรียนรู้ข้อผิดพลาดในการเตรียมตัวก่อนมาเเข่งก็คือการฝึกโจทย์ให้เยอะๆ
                             เเละผมก็ได้เจอกับคนที่เก่งๆหลายคน
                         </div>
-                        <div style="color: #dad8d8; margin-top: 10px; margin-left: 10px; font-size: 18px;">
+                        <div style="color: #dad8d8; margin-top: 0.625rem; margin-left: 0.625rem; font-size: 1.125rem;">
                             รางวัลที่ได้รับ: <span style="color: #55f455;">เข้าร่วมการเเข่งขัน</span></div>
                         <div style="display: flex;">
-                            <div style="margin-left: 10px; margin-top: 10px; gap: 10px; display: flex;">
-                                <span class="tech-card1" style="padding: 9px 5px;">C language</span>
+                            <div style="margin-left: 0.625rem; margin-top: 0.9375rem;">
+                                <span class="tech-card1">C language</span>
                             </div>
-                            <div style="margin-left: 10px; margin-top: 7px;">
+                            <div style="margin-left: 0.625rem; margin-top: 0.4375rem;">
                                 <a href="pagecard7.html" class="bt1">
                                     รายละเอียด
                                 </a>
@@ -347,20 +358,21 @@
                     <a href="pagecard8.html" class="img-card-container">
                         <img src="https://scontent.fkkc2-1.fna.fbcdn.net/v/t1.15752-9/842399589_2234180130775646_843865436509542811_n.jpg?stp=dst-webp_s552x414&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFuYOyiXUqO6Apw5hNYsFH6Rtq87mXgPBhG2rzuZeA8GGaA0uub9ZmVgcwHGEdPLvm24SQZ94PI0TXGXeRsj3eY&_nc_ohc=cazHAfKxIHIQ7kNvwGw6SIM&_nc_oc=Adqsbj48z0CBJet8JRwrcBVjnt5A16Y9NiLl5BMSnfip3UrEtx4lFl0eGIdKg1WraFMpmrK7jQ1rOe-idfcAI_0-&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fkkc2-1.fna&_nc_ss=7a22e&oh=03_Q7cD6gGH_SI3Kyp4grw6uA07V9aSVSMUPPDQkvIaG7qGyL8fjw&oe=6AF2E1CB"
                             class="img-card"
-                            style="width: 100%; height: 170px; object-fit: cover; object-position: center 50%;">
+                            style="width: 100%; height: 10.625rem; object-fit: cover; object-position: center 50%;">
                     </a>
-                    <div style="padding: 10px; margin-top: -1px;">
-                        <h4 style="color: #ffffff; margin-left: 20px;">ห้องเรียนภูมิสารสนเทศ GEO-Informatics 2026<div>
+                    <div style="padding: 0.625rem; margin-top: -0.0625rem;">
+                        <h4 style="color: #ffffff; margin-left: 1.25rem;">ห้องเรียนภูมิสารสนเทศ GEO-Informatics 2026
+                            <div>
                                 (Experience)
                             </div>
                         </h4>
-                        <div style="color: #dad8d8; margin-top: 20px; margin-left: 10px; font-size: 18px;">
+                        <div style="color: #dad8d8; margin-top: 1.25rem; margin-left: 0.625rem; font-size: 1.125rem;">
                             กิจกรรมนี้เป็นกิจกรรมการเรียนรู้เกี่ยวกับภูมิสารสนเทศต่างๆ ณ วิทยาลัยการคอมพิวเตอร์
                             มหาวิทยาลัยขอนแก่น ซึ่งทำให้ผมได้รับความรู้ใหม่ๆที่ผมไม่เคยศึกษา เช่น Geo-ai
                             เเล้วความรู้นี้ผมสามารถนำไปปรับใช้ในการเขียนโค้ดของผมได้อีกด้วย</div>
 
 
-                        <div style="margin-left: 10px; margin-top: 20px;">
+                        <div style="margin-left: 0.625rem; margin-top: 1.25rem;">
                             <a href="pagecard8.html" class="bt1">
                                 รายละเอียด
                             </a>
@@ -373,22 +385,22 @@
                     <a href="pagecard9.html" class="img-card-container">
                         <img src="https://scontent.fbkk22-1.fna.fbcdn.net/v/t1.15752-9/835676535_1409625550639822_156174575192109227_n.png?stp=dst-png_s843x403&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFU-VPEPNlQ9waHpVh1XkvM19NuZZL6RknX025lkvpGScFTnXRuAlBvmI6C8Eb4GCfmYIAj74Fqa2KBsLbG6V_h&_nc_ohc=fhDtXr4s9LEQ7kNvwHhg2Ds&_nc_oc=Adp1tWUQK9T4csmH2EnMAPZyRwA5xSo09x8XpQKkBwe1g-c1Urxv3Sxca8PSM-Om5Yv4o404ZO6DA4OUfwYGcwq5&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fbkk22-1.fna&_nc_ss=7a22e&oh=03_Q7cD6gHIEYJ-Fmglic2WiRboIU0i-GTS9fp3VQY2fUHZ9vLPMQ&oe=6AE83DC5"
                             class="img-card"
-                            style="width: 100%; height: 170px; object-fit: cover; object-position: center 50%;">
+                            style="width: 100%; height: 10.625rem; object-fit: cover; object-position: center 50%;">
                     </a>
-                    <div style="padding: 10px;">
-                        <h4 style="color: #ffffff; margin-left: 20px;">Website praijarurnhouse<div>(Project)</div>
+                    <div style="padding: 0.625rem;">
+                        <h4 style="color: #ffffff; margin-left: 1.25rem;">Website praijarurnhouse<div>(Project)</div>
                         </h4>
-                        <div style="color: #dad8d8; margin-top: 20px; margin-left: 10px; font-size: 18px;">
+                        <div style="color: #dad8d8; margin-top: 1.25rem; margin-left: 0.625rem; font-size: 1.125rem;">
                             เว็บไซต์นี้คือเว็บไซต์หอพักของที่บ้านผมเองซึ่งผมสร้างมาเพื่อเเนะนำรายละเอียดสิ่งต่างๆของหอพักเเละหน้าตาของเเต่ละห้องเป็นอย่างไรเเละยังสามารถเช็คสถานะห้องว่างของเเต่ละห้องเเล้วสามารถกดปุ่มทักสอบถามได้เลย
                             (อยู่เเถวกังสดาล)</div>
 
-                        <div style="margin-left: 10px; margin-top: 9px; gap: 10px; display: flex;">
+                        <div style="margin-left: 0.625rem; margin-top: 0.5625rem; gap: 0.625rem; display: flex;">
                             <span class="tech-card1">JavaScript</span>
                             <span class="tech-card1">Html</span>
                             <span class="tech-card1">Css</span>
                             <span class="tech-card1">PostgreSQL</span>
                         </div>
-                        <div style="margin-left: 10px; margin-top: 20px;">
+                        <div style="margin-left: 0.625rem; margin-top: 1.25rem;">
                             <a href="#" class="bt1">
                                 ชมเว็บไซต์
                             </a>
@@ -406,13 +418,13 @@
                 <a href="pagecard10.html" class="img-card-container">
                     <img src="https://scontent.fkkc2-1.fna.fbcdn.net/v/t1.15752-9/836436941_4659147731023299_3088557130560199581_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1536&ctp=s2048x1536&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFkXJLcI3AC126ec5oHuUzPtKN8lhoGB1u0o3yWGgYHW1JKX95IyJ3Q-_3RxklHlSwJ7oj5jpXvShbz_SiYaasL&_nc_ohc=nivUn5qrS2gQ7kNvwE7HwqX&_nc_oc=AdryXkABlUS2mokQk3kpz2ckxMhKz_Q0-06T4OydyS1kZZ_9jRLhDQI3ROq-Z9yw9F9GO-AIV7aAgMXmX3nyeomk&_nc_zt=23&_nc_ht=scontent.fkkc2-1.fna&_nc_ss=732a8&oh=03_Q7cD6gHiu1M7CzobLlm3rGwpEENFFM9TWuuJB16yNhUbWiZlgg&oe=6AF3131A"
                         class="img-card"
-                        style="width: 100%; height: 170px; object-fit: cover; object-position: center 5%;">
+                        style="width: 100%; height: 10.625rem; object-fit: cover; object-position: center 5%;">
                 </a>
-                <div style="padding: 10px;">
-                    <h4 style="color: #ffffff; margin-left: 20px;">วันวิทยาศาสตร์ในโรงเรียน<div>(Experience)
+                <div style="padding: 0.625rem;">
+                    <h4 style="color: #ffffff; margin-left: 1.25rem;">วันวิทยาศาสตร์ในโรงเรียน<div>(Experience)
                         </div>
                     </h4>
-                    <div style="color: #dad8d8; margin-top: 20px; margin-left: 10px; font-size: 18px;">
+                    <div style="color: #dad8d8; margin-top: 1.25rem; margin-left: 0.625rem; font-size: 1.125rem;">
                         กิจกรรมวันวิทยาศาสตร์ในโรงเรียนเทศบาลวัดกลาง ซึ่งผมได้เป็นคนคุมบูธหุ่นยนต์ micro-bit
                         ในส่วนของการเขียนโค้ดโดยใช้เเบบ codeblockเพื่อเเสดงผลใน micro-bit ตามที่โจทย์กำหนด
                         เเละผมก็ได้สอนคนที่สนใจหรืออยากลองเเก้โจทย์
@@ -420,11 +432,11 @@
 
 
                     </div>
-                    <div style="margin-left: 10px; margin-top: 9px; gap: 10px; display: flex;">
+                    <div style="margin-left: 0.625rem; margin-top: 0.5625rem; gap: 0.625rem; display: flex;">
                         <span class="tech-card1">Block-Based</span>
                         <span class="tech-card1">Micro-bit</span>
                     </div>
-                    <div style="margin-left: 10px; margin-top: 20px;">
+                    <div style="margin-left: 0.625rem; margin-top: 1.25rem;">
                         <a href="pagecard10.html" class="bt1">
                             รายละเอียด
                         </a>
@@ -436,23 +448,23 @@
                     <a href="pagecard11.html" class="img-card-container">
                         <img src="https://scontent.fkkc2-1.fna.fbcdn.net/v/t1.15752-9/843088805_2609735569449042_1750491867182118876_n.jpg?stp=dst-jpg_tt6&cstp=mx1079x762&ctp=s1079x762&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEOULwCw-BoADv9XfbmQZc7oa4NlbgT0SOhrg2VuBPRI2Ccnzd-jvz-e2i__MVlh_1aB91RAJOHHv51WPnGXXp0&_nc_ohc=3zcWeRVk4BIQ7kNvwGGA1Ez&_nc_oc=AdqnU1ooFgaEE3yrGdLF_r_lvoD-PVIGfpOKuaE3_TAmxFqD9f6jEOcS2f017jAYcHAiVfO2LztNDkX-WBoUZ_M-&_nc_zt=23&_nc_ht=scontent.fkkc2-1.fna&_nc_ss=732a8&oh=03_Q7cD6gEKthKItU7SfxlrWhkjjvrqN0pel6ccKARkjah_xcrhnA&oe=6AF2BE63"
                             class="img-card"
-                            style="width: 100%; height: 170px; object-fit: cover; object-position: center 5%;">
+                            style="width: 100%; height: 10.625rem; object-fit: cover; object-position: center 5%;">
                     </a>
-                    <div style="padding: 10px; margin-top: -1px;">
-                        <h4 style="color: #ffffff; margin-left: 20px;">Solve for tomorrow 2025<div>(รอบคัดเลือก)
+                    <div style="padding: 0.625rem; margin-top: -0.0625rem;">
+                        <h4 style="color: #ffffff; margin-left: 1.25rem;">Solve for tomorrow 2025<div>(รอบคัดเลือก)
                             </div>
                         </h4>
-                        <div style="color: #dad8d8; margin-top: 20px; margin-left: 10px; font-size: 18px;">
+                        <div style="color: #dad8d8; margin-top: 1.25rem; margin-left: 0.625rem; font-size: 1.125rem;">
                             ทีมผมได้นำเสนอนวัตกรรมที่คิดขึ้นมาก็คือ Protech water
                             เป็นอุปกรณ์ที่ใช้ตรวจสอบสิ่งเเปลกปลอมในนำ้เเล้วถ้าเจอสิ่งเเปลกปลอมจะส่งสัญญาณเตือน
                             สิ่งที่ได้รับได้ก็คือการอบรมเกี่ยว Design Thinking,Business Model เเละ
                             ได้กล้าทำอะไรใหม่ๆที่ยังไม่เคยทำมาก่อน</div>
 
                         <div style="display: flex;">
-                            <div style="margin-left: 10px; margin-top: 25px; gap: 10px; display: flex;">
-                                <span class="tech-card1" style="padding: 9px 5px;">Arduino</span>
+                            <div style="margin-left: 0.625rem; margin-top: 2.0625rem;">
+                                <span class="tech-card1">Arduino</span>
                             </div>
-                            <div style="margin-left: 10px; margin-top: 25px;">
+                            <div style="margin-left: 0.625rem; margin-top: 1.5625rem;">
                                 <a href="pagecard11.html" class="bt1">
                                     รายละเอียด
                                 </a>
@@ -464,12 +476,12 @@
             <div class="grid-item">
                 <div>
                     <img src="https://scontent.fkkc2-1.fna.fbcdn.net/v/t1.15752-9/838964958_1819089722692139_3633231863582163216_n.jpg?stp=dst-jpg_tt6&cstp=mx1684x1240&ctp=s1684x1240&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGn6K4e4hxJRU9ScpMZu92iPKu7FGDN9z48q7sUYM33PrF4_ggTz0TFuRD9v6uXfbEPV6rlNPzmRpLqUTyXqite&_nc_ohc=Jf4mScppfPwQ7kNvwHvUHJD&_nc_oc=AdrooYpTRFmXU_0dYnirwT0yjWF52_T4PA30VqyMICgHKy1j4jQFP4Iwkc0LXk63mHFJzEiHKxA3oQQ2QocuZ1ff&_nc_zt=23&_nc_ht=scontent.fkkc2-1.fna&_nc_ss=732a8&oh=03_Q7cD6gGgJzSpi8sQysjJaWO3XMETbyY_fBWw1xlB6ssojYOGWA&oe=6AF2AF26"
-                        style="width: 100%; height: 170px; object-fit: cover; object-position: center 70%;">
-                    <div style="padding: 10px;">
-                        <h4 style="color: #ffffff; margin-left: 20px;">คอร์สเรียน sql by borntoDev<div>
+                        style="width: 100%; height: 10.625rem; object-fit: cover; object-position: center 70%;">
+                    <div style="padding: 0.625rem;">
+                        <h4 style="color: #ffffff; margin-left: 1.25rem;">คอร์สเรียน sql by borntoDev<div>
                                 (Experience)(ผ่านคอร์สเรียน)</div>
                         </h4>
-                        <div style="color: #dad8d8; margin-top: 20px; margin-left: 10px; font-size: 18px;">
+                        <div style="color: #dad8d8; margin-top: 1.25rem; margin-left: 0.625rem; font-size: 1.125rem;">
                             ผมได้ติดตามช่อง borntoDev เเละผมได้กำลังศึกษา sql พอดีผมเลยลองเรียน คอร์สเรียนฟรี sql ดู
                             ซึ่งเนื้อครอบคลุมพื้นฐาน ผมก็ได้นำตวามรู้ในการต่อยอดทำโปรเจคต่อๆไป</div>
 
@@ -481,29 +493,33 @@
 
     <!-- contact -->
     <div class="ct" id="ft">
-        <div style="margin-left: 200px; font-family: 'Prompt', sans-serif; font-size: 20px; padding-bottom: 100px;">
-            <div style="font-size: 25px; margin-bottom: 15px;">
+        <div class="contact">
+            <div style="font-size: 1.5625rem; margin-bottom: 0.9375rem;">
                 contact
             </div>
-            <div style="margin-bottom: 10px;">
+            <div style="margin-bottom: 0.625rem;">
                 email: withanphlsakdi906@gmail.com
             </div>
-            <div style="margin-bottom: 0px;">
+            <div style="margin-bottom: 0rem;">
                 Phone number: 0963650168
             </div>
             <div>
-                <a href="https://github.com/withanphlsak"><img
+                <a href="https://www.facebook.com/withan.phlsak"><img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbfmESMMlbFRQVtVwJYbAnqBjIe42bhEbVnl9HPuQzctfGCL6f3rumsjLS&s=10"
                         alt="Facebook" width="40" height="40" class="link-facebook"></a>
             </div>
         </div>
-        <div style=" font-family: 'Prompt', sans-serif; font-size: 18px; padding-bottom: 20px; padding-top: 20px; background-color: rgb(16, 16, 16);">
-            <div
-                style=" margin-left: 50px; background-color: rgb(16, 16, 16); ">
+        <div
+            style=" font-family: 'Prompt', sans-serif; font-size: 1.125rem; padding-bottom: 1.25rem; padding-top: 1.25rem; background-color: rgb(16, 16, 16);">
+            <div style=" margin-left: 3.125rem; background-color: rgb(16, 16, 16); ">
                 © 2026 วิธาน พลศักดิ์. All rights reserved.
             </div>
         </div>
     </div>
+
+    <script>
+
+    </script>
 </body>
 
 </html>

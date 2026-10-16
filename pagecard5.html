@@ -16,7 +16,12 @@
             <h1 class="logo">Withan <h1 class="logo-text">Phlsak</h1>
             </h1>
         </a>
-        <div class="link-nav">
+        <button class="menu-toggle" onclick="document.getElementById('navMenu').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="link-nav" id="navMenu">
             <a href="page1.html#abt" class="link-nav1">About & skills</a>
             <a href="page1.html#pehl" class="link-nav1">projects & experience(Highlight)</a>
             <a href="page1.html#pe" class="link-nav1">projects & experience</a>
@@ -33,32 +38,40 @@
         <div style="margin-top: 15px; text-align: left; font-size: 20px; color: #dad8d8; font-family: 'Prompt', sans-serif;">สิ่งที่ได้รับ: <span style="color: rgb(255, 255, 255);">ผมได้ลองใช้บอร์ด arduino เป็นครั้งเเรก ได้ความรู้ใหม่ๆเกี่ยวกับ arduino เพราะผมไม่เคยศึกษาเกี่ยวกับ arduino เเบบจริงจังมาก่อน</span></div>
         <div style="margin-top: 15px; text-align: left; font-size: 20px; color: #dad8d8; font-family: 'Prompt', sans-serif;">อุปสรรคที่เจอ: <span style="color: rgb(255, 255, 255);">อุปสรรคคือการเดินตรงตัวหุ่นยนต์ที่ผมปรับเเก้ไปเยอะมากทั้งโค้ด โครงสร้างในการทำให้เดินตรงซึ่งทำเอาผมปวดหัวมาก ผมได้ลองกลับมาดูเเล้วคือผมไม่ได้ใช้เซนเซอร์ตรวจจับอะไรซักอย่างเช่น สี ที่มันจะทำให้เดินตรง ทั้งๆที่ผมเคยทำmicro-bitเเล้วเเต่ผมพึ่งนึกได้ เเต่ก็ทำอะไรไม่ได้เพราะว่างบหมดเเล้ว</span></div>
         <div style="margin-top: 15px; text-align: left; font-size: 20px; color: #dad8d8; font-family: 'Prompt', sans-serif;">Tech Stack & tools ที่ใช้: <span style="color: rgb(255, 255, 255);">arduino</span></div>
-        <div>
-            <img src="">
-        </div>
+        
      </div>
+
+     <!-- img -->
+    <div class="img-incard">
+        <img src="https://scontent.fkkc2-1.fna.fbcdn.net/v/t1.15752-9/841207505_1623305769531470_3536085340327630998_n.jpg?stp=dst-webp_s480x480&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeH68KZcWlufWtN65rYu9VMuGzgs_6P0oy8bOCz_o_SjL87ewqDDlRpDBAYzlkPVlL-xnQvtBuV948duYzrJLyDp&_nc_ohc=V4JIY-YHmjUQ7kNvwEATim2&_nc_oc=AdoWqHDI5GW0nI-Am39pnFYLfCgevkM1qlfYW0QAoWRzn_ASB_JWuj-yxLjJN_5mQVVTqN9ONxv-a4_stSyzWkdo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fkkc2-1.fna&_nc_ss=7a22e&oh=03_Q7cD6gENutWcb927g-u-QYUUQZa_YuFSW0nr3FWa1mC2Oh17vA&oe=6AF6E401"
+            class="img-incard-in">
+        <img src="https://scontent.fkkc2-1.fna.fbcdn.net/v/t1.15752-9/849248334_1365643338739697_2397737790056853001_n.jpg?stp=dst-webp_s640x640&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeH8dwm6QU8HDuuufjK95tzU3qTtv0euxx_epO2_R67HH16N9yHLlXsWoVYdtJs50ntfm-YqPtKfxkTkRGGUnQ_w&_nc_ohc=kBxhtwUgq2gQ7kNvwF_Echa&_nc_oc=AdpiOwoBHzUqdXX61n7rP77KGdYfmtuG38kqHCzyoNGb1ho7E_PYrLwQXJir6DmTxZEfXuw5Aipn75NCBDhxpEvU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fkkc2-1.fna&_nc_ss=7a22e&oh=03_Q7cD6gHZwtcxakJFDdlEJicHFpoxGM_BwUCpjm_g2yL2nhiwbQ&oe=6AF70FC2"
+            class="img-incard-in">
+        <img src="https://scontent.fbkk29-4.fna.fbcdn.net/v/t1.15752-9/843366148_2813328439050864_252108196566613227_n.jpg?stp=dst-webp_s552x414&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeF98oz8kR396reJ1OfzSLiEC9-yYyx6oOEL37JjLHqg4Wa3M-r_4fLSEJhp3VksZJZzH8XIFtwBi1V1alK4JhpY&_nc_ohc=QIDAAtOIP9EQ7kNvwFrBBK0&_nc_oc=AdpuHsndrx37k06eXNr4Ze5SzjoqOzdx8decmKbmGX9vAwKCeIYi12JOFq1J_CZYLfY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fbkk29-4.fna&_nc_ss=7a22e&oh=03_Q7cD6gG3645-wPyxhJo4YlNac7FQOh9WFoMWD8wpU31UQ2BQOA&oe=6AF70394"
+            class="img-incard-in">
+    </div>
 
      <!-- contact -->
     <div class="ct" id="ft">
-        <div style="margin-left: 200px; font-family: 'Prompt', sans-serif; font-size: 20px; padding-bottom: 100px;">
-            <div style="font-size: 25px; margin-bottom: 15px;">
+        <div class="contact">
+            <div style="font-size: 1.5625rem; margin-bottom: 0.9375rem;">
                 contact
             </div>
-            <div style="margin-bottom: 10px;">
+            <div style="margin-bottom: 0.625rem;">
                 email: withanphlsakdi906@gmail.com
             </div>
-            <div style="margin-bottom: 0px;">
+            <div style="margin-bottom: 0rem;">
                 Phone number: 0963650168
             </div>
             <div>
-                <a href="https://github.com/withanphlsak"><img
+                <a href="https://www.facebook.com/withan.phlsak"><img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbfmESMMlbFRQVtVwJYbAnqBjIe42bhEbVnl9HPuQzctfGCL6f3rumsjLS&s=10"
                         alt="Facebook" width="40" height="40" class="link-facebook"></a>
             </div>
         </div>
-        <div style=" font-family: 'Prompt', sans-serif; font-size: 18px; padding-bottom: 20px; padding-top: 20px; background-color: rgb(16, 16, 16);">
-            <div
-                style=" margin-left: 50px; background-color: rgb(16, 16, 16); ">
+        <div
+            style=" font-family: 'Prompt', sans-serif; font-size: 1.125rem; padding-bottom: 1.25rem; padding-top: 1.25rem; background-color: rgb(16, 16, 16);">
+            <div style=" margin-left: 3.125rem; background-color: rgb(16, 16, 16); ">
                 © 2026 วิธาน พลศักดิ์. All rights reserved.
             </div>
         </div>

@@ -246,7 +246,7 @@ html {
 .pro-ex-grid2 {
     display: grid;
     grid-template-columns: repeat(3, 21.875rem);
-    grid-template-rows: repeat(3, 31.25rem);
+    grid-template-rows: repeat(3, 33.25rem);
     gap: 3.125rem;
     margin-top: 4.375rem;
     margin-left: 3.125rem;

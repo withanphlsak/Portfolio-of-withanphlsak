@@ -625,7 +625,7 @@ html {
 
     .pro-ex-grid {
         grid-template-columns: repeat(1, 19.875rem);
-        grid-template-rows: repeat(1, 32.25rem);
+        grid-template-rows: repeat(1, 39.25rem);
     }
 
     .contact {
@@ -650,6 +650,6 @@ html {
 
     .pro-ex-grid {
         grid-template-columns: repeat(1, 19.875rem);
-        grid-template-rows: repeat(3, 35.25rem);
+        grid-template-rows: repeat(3, 39.25rem);
     }
 }
